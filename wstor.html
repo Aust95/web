@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Storage</title>
+</head>
+<body>
+	<div id="name"></div>
+
+	<script>
+		/*
+		if(typeof(Storage) !== "undefined"){
+			localStorage.setItem('name', 'Aust');
+
+			//localStorage.removeItem('name');
+
+			if(localStorage.name){
+				document.getElementById('name').innerHTML = localStorage.getItem('name');
+			} else {
+				document.getElementById('name').innerHTML = 'No name found';
+			}
+		} else {
+			console.log('localStorage not available');
+		}
+		*/
+
+		if(typeof(Storage) !== "undefined"){
+			sessionStorage.setItem('name', 'Aust 02');
+
+			//localStorage.removeItem('name');
+
+			if(sessionStorage.name){
+				document.getElementById('name').innerHTML = sessionStorage.getItem('name');
+			} else {
+				document.getElementById('name').innerHTML = 'No name found';
+			}
+		} else {
+			console.log('sessiorStorage not available');
+		}
+	</script>
+</body>
+</html>
