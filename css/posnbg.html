@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position & background</title>
+
+	<style>
+		.wrapper{
+			border: #000 1px solid;
+			width: 400px;
+			height: 400px;
+			position: relative;
+			left: 50px;
+			top: 100px;
+			/*
+			background-image: url('bg.jpg');
+			background-repeat: no-repeat;
+			background-position: 75px 45px;
+			*/
+			background: #eeeff0 url('bg.jpg') no-repeat 75px 45px;
+		}
+
+		.inside{
+			border: #ff0000 1px solid;
+			width: 300px;
+			height: 100px;
+			position: absolute;
+			top: 30px;
+			left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="inside">
+			
+		</div>
+	</div>
+</body>
+</html>
